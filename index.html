@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-label">Shots</div>
+                <div id="shots" class="stat-value">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Hits</div>
+                <div id="hits" class="stat-value">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Accuracy</div>
+                <div id="accuracy" class="stat-value">0%</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Level</div>
+                <div id="level" class="stat-value">1</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">High Score</div>
+                <div id="highScore" class="stat-value">0</div>
+            </div>
+        </div>
+    </div>
+    <div id="levelUpPopup">
+        <div class="popup-content">
+            <h2>Level Complete!</h2>
+            <p>You've reached level <span id="nextLevel"></span></p>
+            <button id="continueBtn">Continue</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
